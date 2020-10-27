@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.css">
+<style>
+body {
+  position: relative;
+}
+</style>
+</head>
+<body data-spy="scroll" data-target="#scrollspy-menu">
+<nav id="scrollspy-menu" class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">ナビバー</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#area-1">場所１</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#area-2">場所２</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#area-3">場所３</a>
+    </li>
+  </ul>
+</nav>
+
+<!---
+下記のdivタグでは
+本書で指定しているstyle指定を追記する必要があります。
+--->
+<div data-spy="scroll" data-target="#scrollspy-menu" data-offset="0">
+  <h3 id="area-1">場所１</h3>
+  <p style="height:700px">...</p>
+  <h3 id="area-2">場所２</h3>
+  <p style="height:700px">...</p>
+  <h3 id="area-3">場所３</h3>
+  <p style="height:700px">...</p>
+</div>
+<script type="text/javascript" src="jquery-3.5.1.js"></script>
+<script type="text/javascript" src="bootstrap-4.5.2-dist/js/bootstrap.bundle.js"></script>
+<script>
+$('body').scrollspy({ target: '#scrollspy-test' })
+</script>
+</body>  
+</html>
